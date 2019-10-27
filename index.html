@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <title>codejam-canvas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="data/32x32.js"></script>
+    <script src="data/4x4.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header-nav"></nav>
+        <h1 class="header-name">CodeJam - Pallete</h1>
+        <menu class="header-menu">
+            <div class="header-menu--icon"></div>
+        </menu>
+    </header>
+
+    <main>
+        <div class="tools_panel">
+            <div class="object_panel">
+                <ul class="object_panel-list">
+                    <li class="object_panel-item">
+                        <img src="assets/img/Paint-bucket.svg" alt="Paint bucket">
+                        <p>Paint bucket</p>
+                    </li>
+
+                    <li class="object_panel-item">
+                        <img src="assets/img/Choose_color.svg" alt="Choose color">
+                        <p>Choose color</p>
+                    </li>
+
+                    <li class="object_panel-item">
+                        <img src="assets/img/Move.svg" alt="Move">
+                        <p>Move</p>
+                    </li>
+
+                    <li class="object_panel-item">
+                        <img src="assets/img/Transform.svg" alt="Transform">
+                        <p>Transform</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="color_panel">
+                <ul class="color_panel-list">
+                    <li class="color_panel-item">
+                        <button></button>
+                        <p>Current color</p>
+                    </li>
+
+                    <li class="color_panel-item">
+                        <button></button>
+                        <p>Prev color</p>
+                    </li>
+
+                    <li class="color_panel-item">
+                        <button></button>
+                        <p>red</p>
+                    </li>
+
+                    <li class="color_panel-item">
+                        <button></button>
+                        <p>blue</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <canvas id='canvas' width='512' height='512'>Обновите браузер</canvas>
+
+        <div class="image_block">
+            <img id="image_canvas" src="data/image.png" alt="image">
+        </div>
+
+        <div class="change_panel">
+            <button class="change_panel-button" id="first_image" onclick="FirstImage()">4x4</button>
+            <button class="change_panel-button" id="second_image" onclick="SecondImage()">32x32</button>
+            <button class="change_panel-button" id="third_image" onclick="ThirdImage()">image</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
