@@ -1,0 +1,315 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+
+    background-color: #FFFFFF
+}
+
+.header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.header-nav {
+    width: 40px;
+    height: 40px;
+
+    background-image: url(assets/img/icon-nav.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-name {
+    font-size: 20px;
+    color: #00000087;
+}
+
+.header-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-flex: 2;
+    -ms-flex-positive: 2;
+    flex-grow: 2;
+    padding-right: 10px;
+}
+
+.header-menu--icon {
+    width: 12px;
+    height: 24px;
+
+    background-image: url(assets/img/icon-menu.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 60px 30px;
+}
+
+.tools_panel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    width: 246px;
+    height: 100%;
+}
+
+.object_panel,
+.color_panel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 228px;
+
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.object_panel {
+    margin-bottom: 92px;
+}
+
+.object_panel-item,
+.color_panel-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px;
+}
+
+.object_panel-item img,
+.color_panel-item button {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+
+    cursor: pointer;
+}
+
+.color_panel-item button {
+    border: 1px solid #000000;
+    border-radius: 100%;
+    outline: 0;
+}
+
+.color_panel-item:nth-child(1) button {
+    background-color: #C4C4C4;
+}
+
+.color_panel-item:nth-child(2) button {
+    background-color: #41F795;
+}
+
+.color_panel-item:nth-child(3) button {
+    background-color: #F74141;
+}
+
+.color_panel-item:nth-child(4) button {
+    background-color: #41B6F7;
+}
+
+.object_panel-item p,
+.color_panel-item p {
+    display: inline-block;
+
+    font-size: 16px;
+    color: #00000054;
+}
+
+canvas {
+    width: 512px;
+    height: 512px;
+
+    border: 1px solid #000000;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.image_block {
+    display: none;
+}
+
+.change_panel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 228px;
+    height: 100%;
+}
+
+.change_panel-button {
+    display: block;
+    width: 100px;
+    height: 50px;
+    margin-bottom: 25px;
+
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    outline: 0;
+
+    cursor: pointer;
+}
+
+.change_panel-button:hover {
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.change_panel-button:active {
+    -webkit-box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.25), 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.25), 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+@media only screen and (max-width: 1050px) {
+    main {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .change_panel {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        width: 512px;
+        height: auto;
+        margin-bottom: 25px;
+    }
+
+    .object_panel {
+        margin: 0;
+    }
+
+    .tools_panel {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        width: 512px;
+        height: 246px;
+        margin: 25px 0;
+    }
+}
+
+@media only screen and (max-width: 511px) {
+    main {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .change_panel {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        width: auto;
+        height: auto;
+        margin-bottom: 25px;
+    }
+
+    .object_panel {
+        margin: 0;
+    }
+
+    .tools_panel {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .object_panel,
+    .color_panel {
+        margin: 25px 0;
+    }
+
+    .object_panel-list,
+    .color_panel-list {
+        width: 100%;
+    }
+
+    canvas {
+        width: 100%;
+    }
+}
